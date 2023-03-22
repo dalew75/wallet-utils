@@ -2,29 +2,28 @@
 
 Utilities for creating and accessing wallet data, seed phrases
 
-# Split/3
-
-[ETHNYC](https://nyc.ethglobal.co/) hackathon project to implement the web3 version of Splitwise. This dApp uses a smart contract in order to record each transaction. Settlement transactions can then take place to reconcile everyone's debt. Furthremore, the contract balance can be used as a form of shared bank account where people may over-pay on their debts and others can take interest-free withdrawls from it.
-
-Review our [pitch deck](https://github.com/chris13524/split3/files/9022020/Split3.pdf).
-
-## Development
+## Syntax
 
 ```bash
-npm run dev
+npm run [eth|btc] [random|'your seed phrase here'] [num-wallets] [label]
 ```
 
-## Contracts
+## Ethereum / EVM Examples
 
 ```bash
-npm run chain
-npm run deploy
+// generate random seed phrase and show first 10 wallets with "my-crypto" as label
+npm run eth random 10 'my-crypto'
+
+// use specific phrase and show first 5 wallets with "nft-account" as label
+npm run eth 'learn gadgetmarine play uncle wide depth warm sound whale unusual salute' random 10 'my-crypto'
 ```
 
-## Deploy to Valist
+## Bitcoin Examples
 
 ```bash
-npm run build
-npm exec next export
-# upload out/*
+// generate random seed phrase and show first 10 wallets with "spending-acct" as label
+npm run btc random 10 'spending-acct'
+
+// use specific phrase and show first 5 wallets with "cold-storage" as label
+npm run btc 'learn gadgetmarine play uncle wide depth warm sound whale unusual salute' random 10 'cold-storage'
 ```

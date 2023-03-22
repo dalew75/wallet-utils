@@ -1,6 +1,6 @@
 # wallet-utils
 
-Utility to create new seed phrases, output wallet addresses and private keys.  Also can input existing seed phrases to get this information.  
+NodeJS command line utility to create new seed phrases, output wallet addresses and private keys.  Also can input existing seed phrases to get this information.  
 
 If you don't trust using 3rd party tools to generate your private keys, download this utility, inspect the source, and run locally. (with access to internet disabled if you're really paranoid).  Write down your seed phrase offline, and exit out. There will be no doubt that nobody has ever seen your seed phrase.
 

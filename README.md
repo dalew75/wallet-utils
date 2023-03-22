@@ -24,7 +24,7 @@ npm run [eth|btc] [random|'your seed phrase here'] [num-wallets] [label]
 npm run eth random 10 'my-crypto'
 
 // use specific phrase and show first 5 wallets with "nft-account" as label
-npm run eth 'learn gadgetmarine play uncle wide depth warm sound whale unusual salute' random 10 'my-crypto'
+npm run eth 'learn gadgetmarine play uncle wide depth warm sound whale unusual salute' random 5 'my-crypto'
 ```
 
 ## Bitcoin Examples
@@ -34,5 +34,5 @@ npm run eth 'learn gadgetmarine play uncle wide depth warm sound whale unusual s
 npm run btc random 10 'spending-acct'
 
 // use specific phrase and show first 5 wallets with "cold-storage" as label
-npm run btc 'learn gadgetmarine play uncle wide depth warm sound whale unusual salute' random 10 'cold-storage'
+npm run btc 'learn gadgetmarine play uncle wide depth warm sound whale unusual salute' random 5 'cold-storage'
 ```

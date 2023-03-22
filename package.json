@@ -4,6 +4,8 @@
   "description": "Utilities for creating and accessing wallet data, seed phrases",
   "main": "index.js",
   "scripts": {
+    "eth": "node index.js",
+    "btc": "node createWallet.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,9 @@
   },
   "homepage": "https://github.com/dalew75/wallet-utils#readme",
   "dependencies": {
-    "ethers": "^5.1.0"
+    "ethers": "^5.1.0",
+    "bip32": "^2.0.6",
+    "bip39": "^3.0.4",
+    "bitcoinjs-lib": "^6.0.1"
   }
 }

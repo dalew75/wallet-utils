@@ -1,7 +1,7 @@
 //Import dependencies
-const bip32 = require('bip32')
-const bip39 = require('bip39')
-const bitcoin = require('bitcoinjs-lib')
+const bip32 = require('bip32');
+const bip39 = require('bip39');
+const bitcoin = require('bitcoinjs-lib');
 
 let [seedPhrase, numWalletsStr, label] = process.argv.slice(2);
 let numWallets = numWalletsStr ? parseInt(numWalletsStr) : 1;
@@ -10,8 +10,11 @@ let numWallets = numWalletsStr ? parseInt(numWalletsStr) : 1;
 const network = bitcoin.networks.bitcoin //use networks.testnet for testnet
 let mnemonic = seedPhrase || bip39.generateMnemonic();
 if (seedPhrase === 'random') {
-  mnemonic = bip39.generateMnemonic()
-  console.log(`${label}: Created new mnemonic: '${mnemonic}'`);
+  mnemonic = bip39.generateMnemonic();
+  console.log(`${label}: Created seed phrase: '${mnemonic}'`);
+}
+else {
+  console.log(`${label}: Seed phrase: '${mnemonic}'`);
 }
 
 const seed = bip39.mnemonicToSeedSync(mnemonic);
